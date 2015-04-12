@@ -77,6 +77,7 @@ public class ArrayBox extends StaticWidget {
 			public void actionPerformed(ActionEvent e) {
 				Robot.getTable("AUTONOMOUS").putString("Auton Array",
 						values.toString());
+				System.out.println(Robot.getTable("AUTONOMOUS").getString("Auton Array"));  
 			}
 		});
 
