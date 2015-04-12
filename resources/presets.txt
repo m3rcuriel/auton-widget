@@ -1,3 +1,10 @@
-test
-	test2
-	test3
+can mobility
+	+claw close
+	+stabilizer open
+	+elevator to top
+	+stabilizer close
+	+drive -110
+	+turn -90
+	+stabilizer open
+mobility
+	+drive 90
