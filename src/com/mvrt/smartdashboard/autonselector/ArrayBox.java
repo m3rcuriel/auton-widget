@@ -77,7 +77,6 @@ public class ArrayBox extends StaticWidget {
 			public void actionPerformed(ActionEvent e) {
 				Robot.getTable("AUTONOMOUS").putString("Auton Array",
 						values.toString());
-				System.out.println(Robot.getTable("AUTONOMOUS").getString("Auton Array"));  
 			}
 		});
 
@@ -261,7 +260,7 @@ public class ArrayBox extends StaticWidget {
 					line = read.readLine();
 					ArrayList<String> temp = new ArrayList<String>();
 					while (line != null && line.charAt(0) == '\t') {
-						temp.add(line);
+						temp.add(line.substring(1));
 						line = read.readLine();
 					}
 					presets.put(name, temp);
